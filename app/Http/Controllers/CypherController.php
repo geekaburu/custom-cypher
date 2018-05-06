@@ -14,7 +14,7 @@ class CypherController extends Controller
 	    	'AhQz3gLrlJksBPbaPnR7' => 'VT7CPKF4o2pHAKhvZg9W',
 	    ];
 
-	    $uniqueKey = str_split($tokens['AhQz3gLrlJksBPbaPnR7']);
+	    $uniqueKey = str_split($tokens[$key]);
 	    foreach ($uniqueKey as $char) {
 	    	$ascii = ord($char);
 	    	$largeAscii < $ascii ? $largeAscii = $ascii : $largeAscii = $largeAscii;
