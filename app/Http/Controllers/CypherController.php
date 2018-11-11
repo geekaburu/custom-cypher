@@ -39,7 +39,7 @@ class CypherController extends Controller
 	    	'encrypted' => $encrypted,
 	    ]);
 	}
-
+	
 	public function dencrypt(Request $request){
 		$string = utf8_decode($request->text);
 		$mod = $this->getAsciiAdditionValue($request->key);
